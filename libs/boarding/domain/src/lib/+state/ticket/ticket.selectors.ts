@@ -7,7 +7,7 @@ import {
 } from './ticket.reducer';
 
 // Lookup the 'Ticket' feature state managed by NgRx
-export const getTicketState = createFeatureSelector<TicketPartialState, State>(
+export const getTicketState = createFeatureSelector<State>(
   TICKET_FEATURE_KEY
 );
 
