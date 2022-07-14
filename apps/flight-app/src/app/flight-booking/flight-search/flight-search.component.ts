@@ -13,7 +13,7 @@ export class FlightSearchComponent implements OnInit {
   from = 'Hamburg'; // in Germany
   to = 'Graz'; // in Austria
   urgent = false;
-  flights$ = this.store.select(state => state.flightBooking.flights);
+  flights$ = this.store.select(fromFlightBooking.selectActiveUserFlights);
 
   // "shopping basket" with selected flights
   basket: { [id: number]: boolean } = {
@@ -23,7 +23,7 @@ export class FlightSearchComponent implements OnInit {
 
   constructor(
     private flightService: FlightService,
-    private store: Store<fromFlightBooking.FlightBookingRootState>) {
+    private store: Store) {
   }
 
   ngOnInit() {
