@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/boarding",
         "index": "apps/boarding/src/index.html",
@@ -13,8 +15,13 @@
         "polyfills": "apps/boarding/src/polyfills.ts",
         "tsConfig": "apps/boarding/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/boarding/src/favicon.ico", "apps/boarding/src/assets"],
-        "styles": ["apps/boarding/src/styles.scss"],
+        "assets": [
+          "apps/boarding/src/favicon.ico",
+          "apps/boarding/src/assets"
+        ],
+        "styles": [
+          "apps/boarding/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -71,17 +78,25 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": ["apps/boarding/**/*.ts", "apps/boarding/**/*.html"]
+        "lintFilePatterns": [
+          "apps/boarding/**/*.ts",
+          "apps/boarding/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/boarding"],
+      "outputs": [
+        "coverage/apps/boarding"
+      ],
       "options": {
         "jestConfig": "apps/boarding/jest.config.ts",
         "passWithNoTests": true
       }
     }
   },
-  "tags": ["domain:boarding", "type:app"]
+  "tags": [
+    "domain:boarding",
+    "type:app"
+  ]
 }
