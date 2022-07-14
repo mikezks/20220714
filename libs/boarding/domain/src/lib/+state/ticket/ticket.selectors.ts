@@ -1,9 +1,6 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import {
-  TICKET_FEATURE_KEY,
-  State,
-  TicketPartialState,
-  ticketAdapter,
+  State, ticketAdapter, TICKET_FEATURE_KEY
 } from './ticket.reducer';
 
 // Lookup the 'Ticket' feature state managed by NgRx
